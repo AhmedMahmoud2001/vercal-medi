@@ -1,0 +1,882 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.localClass {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background: crimson;
+    font-family: calibri;
+    padding-right: 55px;
+    padding-left: 55px;
+    
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo1::first-letter{
+    font-size: 52px;
+    font-style: italic;
+    font-weight: 600;
+    color: white;
+    margin-left: 80px;
+}
+.logo1{
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 300;
+    color: white;
+    
+   
+}
+.logo2{
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    padding-right: 20px;
+   
+}
+
+.menu {
+    font-size: 25px;
+    color: white;
+    display: none;
+}
+
+.navlink {
+    display: flex;
+    
+}
+
+.navlink a, .navlink button {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;   /* to remove underlline for links*/
+    padding: 15px;
+    margin-right: 30px;
+}
+
+.b1, .b2 {
+    background-color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 120px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.b1:hover, .b2:hover {
+    background-color: palevioletred;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('/assets/1.png');
+    background-size: 2200px 520px;
+    background-repeat: no-repeat;
+    animation: change 20s infinite ease-in-out;
+}
+@media(max-width:1080px){
+    .home{
+        background-size: 680px 900px;
+    }
+}
+.p1 {
+    color: rgb(255, 3, 3);
+    font-style: italic;
+    font-weight: bolder;
+    font-size: x-large;
+    margin-top: 350px;
+    margin-right: 1030px;
+    margin-left: 20px;
+}
+
+@keyframes change {
+    0% {
+        background-image: url('/assets/1.png');
+    }
+    20% {
+        background-image: url('/assets/2.jpg');
+    }
+    40% {
+        background-image: url('/assets/3.jpg');
+    }
+    60% {
+        background-image: url('/assets/4.jpeg');
+    }
+    80% {
+        background-image: url('/assets/5.jpeg');
+    }
+    100% {
+        background-image: url('/assets/6.jpeg');
+    }
+}
+
+.Emerg {
+    background-color: crimson;
+    border-radius: 10px;
+    padding: 30px;
+    width: 190px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.Emerg:hover {
+    background-color: palevioletred;
+}
+
+.table1 {
+    background-color: rgb(242, 186, 205);
+    border-color: rgb(242, 186, 205);
+    margin: 0;
+    padding-right: 55px;
+    padding-left: 55px;
+    overflow-x: auto;
+}
+
+.table2 {
+    border-color: rgb(236, 5, 82);
+    margin: 0;
+
+}
+
+#b1patient, #b2patient, #b3patient {
+    background-color: rgb(227, 38, 76);
+    padding: 100px;
+    width: 390px;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+}
+
+#b1patient {
+    margin-block-end: auto;
+    margin-left: 180px;
+    margin-right: 0;
+}
+
+#b1patient:hover, #b2patient:hover, #b3patient:hover {
+    background-color: rgb(125, 8, 47);
+}
+
+.form1 {
+    background-color: antiquewhite;
+    margin-left: 60px;
+}
+
+.intropatient {
+    font-size: 1200;
+    margin-left: 430px;
+    background-color: antiquewhite;
+}
+
+.introb1 {
+    background-color: crimson;
+    width: 90px;
+    height: 60px;
+}
+
+.introb2 {
+    background-color: crimson;
+    width: 150px;
+    height: 40px;
+    margin-left: 800px;
+}
+
+@media (max-width: 1080px) {
+    .menu {
+        display: block;
+    }
+    .navlink {
+        display: none;
+        flex-direction: column;
+        align-items: left;
+        background-color: crimson;
+        width: 30%;
+        position: absolute;
+        top:10%;
+        left: 0;
+        transition: clip-path 0.5s ease-in;
+        z-index: 100;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .navlink a, .navlink button {
+        margin: 5px 0;
+        padding: 5px;
+    }
+    .show {
+        display: flex;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .table1 {
+        display: block;
+    }
+ 
+    .table1 th, .table1 td,.table1 tr {
+        display:block;
+        font-weight: bold; 
+        padding: 10px 0; 
+         text-align: left;
+    }
+    
+}
+
+.servicesContainer {
+    display: flex;
+    justify-content: space-around;
+   
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+.servicesb {
+    flex: 1; /* Ensures all buttons take equal space */
+    display: flex;
+    flex-direction: column;
+ 
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+    background-color: #f1e6e6;
+    border-radius: 20px;
+    transition: background-color 0.5s ease;
+    min-height: 280px; /* Ensures a minimum height for the buttons */
+   
+  }
+  .link{
+    text-decoration: none;
+  }
+  .servicesb h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .servicesb p {
+    font-size: 18px;
+  }
+.servicesb:hover{
+    background-color: rgb(244, 168, 169);
+    background-size: 20px;
+    color: white;
+}
+@media (max-width:1080px){
+    .servicesContainer{
+        display: block;
+    
+       
+    }
+    .servicesb{
+        margin-bottom: 20px;
+       display: flex;
+       flex:1;
+    }
+}
+.footer{
+    min-height: calc(100vh-150px);
+     background-color: rgb(245, 217, 222);
+    color:black;
+    font-size: 10px;
+   text-align: center;
+   margin-top: auto;
+   
+}
+.footer p{
+    font-size: 20px ;
+}
+/* contact us //////////////////////////////////////////////////////////////////////////////////////////////////*/
+.contactform{
+    font-size: 38px;
+   text-align: center;
+    color: black;
+    min-width: 600px;
+   border-radius: 30px;
+    box-shadow: #0070f3;
+   background-size: 900;
+    display: inline-block;  
+    align-items: center;
+background-color: #fae1e1;
+   margin-left: 30%;
+
+}
+.contactform2{
+  font-size: 38px;
+ text-align: center;
+  color: black;
+  min-width: 400px;
+ border-radius: 30px;
+  box-shadow: #0070f3;
+ background-size: 900;
+  display: inline-block;  
+  align-items: center;
+background-color: #fae1e1;
+margin-left: 15%;
+margin-right: 10%;
+
+}
+@media (max-width:1080px) {
+    .contactform,.contactform2{
+        display: block;
+        margin-left: 0%;
+    }
+}
+
+  /* elder people////////////////////////////////////////////////////////////////////////////*/
+  .headerr {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .headerr h1 {
+    font-size: 2.5rem;
+    color: #0044cc;
+  }
+  
+  
+  .servicesContainer {
+    display: flex; /* Arrange the services side by side */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  gap: 20px; /* Space between service cards */
+  }
+  .servicee {
+    max-width: 200px; /* Ensure each card has a minimum width */
+    flex-shrink: 0; /* Prevent cards from shrinking */
+    padding: 20px;
+    text-align: center;
+    background-color: #eacece;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+
+
+  .servicee h2 {
+    font-size: 1.8rem;
+    color: #33091a;
+  }
+  
+  .buttonn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #0077cc;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .buttonn:hover {
+    background-color: #0d4f7e;
+  }
+  @media (max-width:1080px){
+    .headerr{
+        font-size: 20px; 
+      }
+      .servicesContainer {
+        flex-direction: column; 
+      }
+      .servicee {
+        flex: 1 1 100%;
+        margin-bottom: 20px; 
+      }
+      .icon {
+        font-size: 24px;
+      }
+      .servicee h2 {
+        font-size: 18px;
+      }
+      .servicee p {
+        font-size: 14px;
+      }
+    }
+  /* blogs for home page////////////////////////////////////////////////////////////////////////////////////////////////*/
+  .blogs {
+display:flex;
+overflow-x: auto;
+  }
+  
+  .blogss {
+    flex-shrink: 0;           /* Prevent images from shrinking */
+    width: 800px;            /* Set a fixed width for each image */
+    height: 800px;            /* Set a fixed height for each image */
+    object-fit: cover;         /* Ensure images scale properly */
+  }
+  @media (max-width:1080px){
+    .blogs{
+        flex-direction: column;
+    }
+    .blogss{
+        height:400px;
+        width: 400px;
+      
+        
+
+
+    }
+  }
+  /* tele health pageeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee*/
+  .teleb{
+    background-color: rgb(202, 198, 198);
+    color:rgb(77, 32, 39);
+    font-size: 89px;
+    transition: background-color 0.5s ease;
+    background-size: 40px;
+
+    border-radius: 33px;
+    padding: 40px;
+    margin: 10px;
+   
+   
+   
+  }
+  .teleb:hover{
+     background-color: pink;
+     background-size: 40px;
+     color: white;
+  }
+  @media (max-width:1080px){
+    .teleb{
+      display: inline-block;
+      background-size: 20px;
+      font-size: 30px;
+    }
+    .teleimg{
+      width: 483px;
+      height:300px;
+    }
+  }
+  /* login and sign up*********************/
+  .buttonls{
+  
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 50px;
+  background-size: 90px;
+  cursor: pointer;
+  width: 190px;
+ 
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  }
+  .buttonls:hover{
+    padding: 0.75rem;
+  background-color: #c0c8d1;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 50px;
+  background-size: 90px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
+  .containerlss {
+  display: flex;
+  
+  align-items: center;
+  height: 100vh; /* Full height view */
+  padding: 10px;
+}
+  .containerls{
+   
+    background-size: 200px;
+      font-size: 78px;
+     
+      color: black;
+    
+      align-items: center;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      max-width: 200px;
+      padding: 10px;
+      
+      
+      border-radius: 10px;
+  
+  }
+  .titlels{
+     font-size: 80px;
+     color: #33091a;
+     display: flex;
+     justify-content:center ;
+    
+     align-Items: flex-start;
+     height: 100vh; 
+    
+     margin-left: 10%;
+     
+  }
+  .input{
+    background-size: 12px;
+    font-size: 40px;
+    border-radius: 30px;
+    background-color: #fae1e1;
+  }
+  .inputs{
+    background-size: 12px;
+    gap:20px;
+    align-items: center;
+    font-size: 40px;
+    border-radius: 30px;
+    background-color: #fccede;
+  }
+  .input:hover ,.inputs:hover{
+  
+    background-color: rgb(138, 241, 247);
+    color: white;
+  
+  }
+  .logols{
+    font-size: 52px;
+    font-style: italic;
+    font-weight: 300;
+    
+  }
+  @media (max-width:1080px) {
+
+    /* Adjust container padding and layout for smaller screens */
+    .containerlss {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Form width adjustment */
+    .containerls {
+      width: 90%;
+    }
+  
+    .buttonls {
+      font-size: 26px; /* Slightly smaller button text for mobile */
+    }
+    .imgls{
+    width:340px;
+    height:150px;
+    }
+  
+    .input {
+      font-size: 24px; /* Adjust input field text size for mobile */
+    }
+    .inputs{
+      background-size: 12px;
+      gap:20px;
+      flex-direction: column;
+      font-size: 20px;
+      border-radius: 30px;
+      background-color: #e4e1e1;
+    }
+    .buttonlss{
+      font-size: 20px;
+      background-size: 40px;
+    }
+    .logols{
+      flex-direction: column;
+      display: flex;
+      font-size: 10px;
+     
+    }
+   
+   
+    
+    
+      .containerss {
+        padding: 15px;
+      }
+      
+      .forms {
+        padding: 15px;
+        width: 100%;
+      }
+    
+      .inputGroups {
+        gap: 10px;
+      }
+    }
+.forgetPassword a{
+  font-size: 15px;
+}
+.buttonlss{
+  background-size: 80px;
+  background-color: #aed1f8;
+  font-size: 60px;
+  border-radius: 40px;
+  border-color: #33091a;
+}
+.buttonlss:hover{
+  background-color: crimson;
+  color:white;
+}
+
+  .links{
+    text-decoration: none;
+    color: rgb(6, 22, 129);
+    
+  }
+
+  /* signup for doctors ****************************/
+  .containerd {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px;
+    width: 100%;
+    margin-left: 280px;
+   margin-bottom: 30px;
+    max-width: 900px;
+    background-color: rgb(218, 231, 231);
+  }
+  
+  .inputGroups{
+    background-color: rgb(218, 231, 231);
+    align-items: center;
+    font-size: 38px;
+ text-align: center;
+  color: black;
+  min-width: 500px;
+ border-radius: 30px;
+  box-shadow: #0070f3;
+
+ background-size: 900;
+  display: inline-block;  
+  align-items: center;
+background-color: #fae1e1;
+margin-left: 28%;
+margin-right: 10%;
+padding: 20px;
+  }
+  @media (max-width: 1080px) {
+    .inputGroups {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 20px;
+      font-size: 15px;
+      max-width: 150px;
+     margin: 0;
+      background-size: 300px;
+      margin-bottom: 0%;
+      display: block;
+    }
+    .input.inputGroups{
+      size: 15px;
+      padding: 38px;
+      flex-direction: column;
+      align-items: center;
+     
+      font-size: 15px;
+      max-width: 300px;
+      
+     margin: 0;
+      background-size: 300px;
+      margin-bottom: 0%;
+      display: block;
+      margin-left: 60px;
+    }
+  }
+  .fileInput {
+    margin: 10px 0;
+  }
+  
+  .verifyButton,
+  .newMeetingButton,
+  .getInfoButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
+  .inputContainerd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+  }
+  
+  
+  
+  .patientInfo {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+  }
+  
+  /* Responsive layout for larger screens */
+  @media (max-width: 1080px) {
+    .containerd {
+      flex-direction: row;
+      justify-content: space-around;
+      margin-left: 20px;
+      max-width: 200px;
+      margin-bottom: 0%;
+      display: block;
+    }
+  
+    .questionSection,
+    .inputContainer,
+    .patientInfo {
+      max-width: 45%;
+    }
+  }
+  
+  /* Mobile layout adjustments */
+  @media (max-width: 767px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .verifyButton,
+    .newMeetingButton,
+    .getInfoButton {
+      width: 100%;
+    }
+  
+    .inputContainer,
+    .patientInfo,
+    .questionSection {
+      width: 100%;
+    }
+  }
+  /* meeting roooooooooooooooooooooooooooooooooooooooooooooooooooooooom*/
+.conmet{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:rgb(153, 212, 228); 
+  margin: 0;
+  padding: 0;
+}
+
+
+.form-conmet {
+  background-color: #fae0e0; 
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 800px;
+  min-height: 300px;
+  max-width: 400px;
+}
+
+
+.titleconmet {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: crimson; 
+  margin-bottom: 0.5rem;
+}
+
+.subtitleconmet {
+  font-size: 1.2rem;
+  color: #a5b4fc; /* Light purple */
+  margin-bottom: 1rem;
+}
+
+
+.descriptionconmet {
+  font-size: 0.9rem;
+  color: #cbd5e1; /* Light gray */
+  margin-bottom: 1.5rem;
+}
+
+
+.input-groupconmet {
+  margin-bottom: 1rem;
+}
+
+.inputconmet {
+  width: 100%;
+  padding: 40px;
+  border-radius: 5px;
+  border: 1px solid #4a5568; /* Darker border */
+  background-color: #4a5568;
+  color: #edf2f7; /* Light text */
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.inputconmet:focus {
+  border-color: #38bdf8; /* Blue focus border */
+  outline: none;
+}
+
+
+.buttonconmet {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.join-buttonconmet {
+  background-color: #38bdf8;
+  color: #ffffff;
+ background-size: 20px;
+}
+
+.join-buttonconmet:hover {
+  background-color: #2563eb; /* Darker blue */
+}
+
+.join-buttonconmet:disabled {
+  background-color: #94a3b8; /* Gray when disabled */
+  cursor: not-allowed;
+}
+
+.create-buttonconmet {
+  background-color: transparent;
+  color: #38bdf8;
+  text-decoration: underline;
+}
+
+.create-buttonconmet:hover {
+  color: #2563eb; /* Darker blue */
+}
+
+
+@media screen and (max-width: 1080px) {
+  .form-containerconmet {
+    padding: 1.5rem;
+  }
+
+  .titleconmet {
+    font-size: 1.5rem;
+  }
+
+  .subtitleconmet {
+    font-size: 1rem;
+  }
+
+  .descriptionconmet {
+    font-size: 0.8rem;
+  }
+}
